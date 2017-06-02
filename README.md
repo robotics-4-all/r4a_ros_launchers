@@ -9,7 +9,7 @@ mkdir -p r4a_launchers_ws/src
 cd r4a_launchers_ws/src
 catkin_init_workspace
 
-git clone git@github.com:robotics-4-all/r4a_ros_launchers.git
+git clone https://github.com/robotics-4-all/r4a_ros_launchers.git
 cd ../
 catkin_make
 
@@ -19,6 +19,7 @@ source devel/setup.bash
 Available launchers:
 
 - ```roslaunch r4a_launchers usb_cam.launch```: Launches a USB camera node and the image view window.
+- ```roslaunch openni2_launch openni2.launch```: Launches the driver for Asus Xtion.
 
 
 Notes to use Turtlebot:
