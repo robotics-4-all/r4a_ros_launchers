@@ -3,6 +3,7 @@
     <!-- <remap from="scan" to="youbot/scan_front" /> -->
     <!-- <remap from="base_link" to="youbot/base_link" /> -->
     <!-- <remap from="odom" to="youbot/odom" /> -->
+    <param name="map_update_interval" value="1.0" />
   </node>
   <include file="$(find rplidar_ros)/launch/rplidar.launch" />
   <include file="$(find turtlebot_bringup)/launch/minimal.launch" />
