@@ -1,0 +1,4 @@
+
+<launch>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find r4a_launchers)/rviz/rplidar_standalone.rviz" />
+</launch>
