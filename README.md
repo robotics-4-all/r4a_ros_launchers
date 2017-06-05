@@ -27,7 +27,7 @@ Available launchers:
 - ```roslaunch r4a_launchers cartographer_turtlebot.launch```: Launches the cartographer slam, using the cartographer_turtlebot package, turtlebot_bringup, rplidar and a static tf transform.
 - ```roslaunch kobuki_keyop keyop.launch```: Must be executed __after__ the turtlebot_bringup launcher and offers robot motion by keyboard arrows.
 - ```roslaunch r4a_launchers movebase_turtlebot.launch```: Executes move base for Turtlebot.
-
+- ```roslaunch r4a_launchers amcl_demo.launch```: Executes AMCL for Turtlebot. A static map must exist placed under ```/home/r4a/maps/lab.yaml```.
 
 Notes to use Turtlebot:
 - To connect: ```ssh r4a@192.168.2.240```. Ask for password!
