@@ -26,6 +26,7 @@ Available launchers:
 - ```roslaunch r4a_launchers gmapping_turtlebot.launch```: Launches everything needed to execute GMapping in turtlebot (gmapping, turtlebot_bringup, rplidar and a static tf transform from base_link to laser)
 - ```roslaunch r4a_launchers cartographer_turtlebot.launch```: Launches the cartographer slam, using the cartographer_turtlebot package, turtlebot_bringup, rplidar and a static tf transform.
 - ```roslaunch kobuki_keyop keyop.launch```: Must be executed __after__ the turtlebot_bringup launcher and offers robot motion by keyboard arrows.
+- ```roslaunch r4a_launchers movebase_turtlebot.launch```: Executes move base for Turtlebot.
 
 
 Notes to use Turtlebot:
