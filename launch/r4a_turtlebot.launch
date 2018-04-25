@@ -1,0 +1,22 @@
+<launch>
+
+  <!-- Gmapping -->
+  <node pkg="gmapping" type="slam_gmapping" name="gmapping_thing" output="screen" >
+    <!-- <remap from="scan" to="youbot/scan_front" /> -->
+    <!-- <remap from="base_link" to="youbot/base_link" /> -->
+    <!-- <remap from="odom" to="youbot/odom" /> -->
+    <param name="map_update_interval" value="1.0" />
+  </node>
+
+  <!-- Lidar -->
+  <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+
+  <!-- Turtlebot init -->
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch" />
+
+  <!-- Xtion init -->
+  <include file="$(find openni2_launch)/launch/openni2.launch" />
+
+  <!-- Static tf transforms -->
+  <node pkg="tf" type="static_transform_publisher" name="laser_to_base" args="0 0 0 0 0 0 base_link laser 100" />
+</launch>
